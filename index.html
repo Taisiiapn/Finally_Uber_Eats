@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Uber Eats</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
@@ -18,34 +17,45 @@
         <a href="#" class="header__left-side header__address-time">asap</a>
         <span class="text">to</span>
         <form class="header__left-side-place-form">
-          <input class="header__left-side-place" type="text" value="ul. Tarasivska St, 16" placeholder="Enter your address here" required>
+          <input class="header__left-side-place"
+            type="text"
+            placeholder="ul. Tarasivska St, 16"
+            required>
         </form>
       </div>
 
       <div class="header__right-side">
-        <a href="#" class="header__right-side-sign-in link button">Sign In</a>
-        <a href="#" class="header__right-side-register link button">Register</a>
-        <a href="#"><img class="header__right-side-cart" src="./images/basket.svg" alt="shopping-cart"></a>
+        <button class="header__right-side-sign-in link button" type="button">Sign In</button>
+        <button class="header__right-side-register link button" type="button">Register</button>
+        <div class="header__right-side-cart">
+          <a href="#">
+            <img src="./images/basket.svg" alt="shopping-cart">
+          </a>
+        </div>
       </div>
     </header>
 
     <main class="main-content">
       <div class="main-content__container">
         <form class="main-content__search">
-          <input class="main-content__search-form" type="text" placeholder="Search for restaurant or cuisine">
-          <button type="reset" title="Click me to clear the input field">x</button>
+          <input class="main-content__search-form"
+            type="text" placeholder="Search for restaurant or cuisine">
+          <button class="btn" type="reset" title="Click me to clear the input field">x</button>
         </form>
 
         <div class="main-content__left-side">
           <div class="main-content__left-side-text">
-            <span class="text-gray">When</span>
-            <span class="text-gray">To</span>
+            <div class="text-gray">When</div>
+            <div class="main-content__left-side-time link">
+              <a href="#">asap</a>
+            </div>
           </div>
 
           <div class="main-content__left-side-delivery">
-            <a href="#" class="main-content__left-side-time link">asap</a>
+            <div class="text-gray">To</div>
             <form class="main-content__left-side-place-form">
-              <input class="main-content__left-side-place" type="text" value="ul. Tarasivska St, 16">
+              <input class="main-content__left-side-place"
+                type="text" placeholder="ul. Tarasivska St, 16">
             </form>
           </div>
         </div>
@@ -59,7 +69,8 @@
           <!--card-------------->
           <article class="restaurants-item">
             <a href="#" class="card">
-              <img class="restaurants-item__image" src="./images/catalog1.png" alt="mcdonalds">
+              <img class="restaurants-item__image"
+                src="./images/catalog1.png" alt="mcdonalds photo">
             </a>
             <a href="#" class="card">
               <h3 class="restaurants-item__heading">Макдоналдс</h3>
@@ -71,7 +82,8 @@
           <!--card-------------->
           <article class="restaurants-item">
             <a href="#" class="card">
-              <img class="restaurants-item__image" src="./images/catalog2.png" alt="wokwei">
+              <img class="restaurants-item__image"
+                src="./images/catalog2.png" alt="wokwei">
             </a>
             <a href="#" class="card">
               <h3 class="restaurants-item__heading">WOKWEI</h3>
@@ -83,7 +95,8 @@
           <!--card-------------->
           <article class="restaurants-item">
             <a href="#" class="card">
-              <img class="restaurants-item__image" src="./images/catalog3.png" alt="hot-dog">
+              <img class="restaurants-item__image"
+                src="./images/catalog3.png" alt="hot-dog">
             </a>
             <a href="#" class="card">
               <h3 class="restaurants-item__heading">YIZHA</h3>
@@ -95,7 +108,8 @@
           <!--card-------------->
           <article class="restaurants-item">
               <a href="#" class="card">
-                <img class="restaurants-item__image" src="./images/catalog4.png" alt="salads">
+                <img class="restaurants-item__image"
+                  src="./images/catalog4.png" alt="salads">
               </a>
               <a href="#" class="card">
                 <h3 class="restaurants-item__heading">Musafir (вул. Саксаганського)</h3>
@@ -107,7 +121,8 @@
           <!--card-------------->
           <article class="restaurants-item">
               <a href="#" class="card">
-                <img class="restaurants-item__image" src="./images/catalog5.png" alt="wok">
+                <img class="restaurants-item__image"
+                  src="./images/catalog5.png" alt="wok">
               </a>
               <a href="#" class="card">
                 <h3 class="restaurants-item__heading">WOKWEI</h3>
@@ -119,7 +134,8 @@
           <!--card-------------->
           <article class="restaurants-item">
               <a href="#" class="card">
-                <img class="restaurants-item__image" src="./images/catalog6.png" alt="deserts">
+                <img class="restaurants-item__image"
+                  src="./images/catalog6.png" alt="deserts">
               </a>
               <a href="#" class="card">
                 <h3 class="restaurants-item__heading">Milk Bar</h3>
@@ -131,7 +147,8 @@
           <!--card-------------->
           <article class="restaurants-item">
               <a href="#" class="card">
-                <img class="restaurants-item__image" src="./images/catalog7.png" alt="pizza">
+                <img class="restaurants-item__image"
+                  src="./images/catalog7.png" alt="pizza">
               </a>
               <a href="#" class="card">
                 <h3 class="restaurants-item__heading">Mimosa Brooklyn Pizza</h3>
@@ -143,7 +160,8 @@
           <!--card-------------->
           <article class="restaurants-item">
               <a href="#" class="card">
-                <img class="restaurants-item__image" src="./images/catalog8.png" alt="sushi-set">
+                <img class="restaurants-item__image"
+                  src="./images/catalog8.png" alt="sushi-set">
               </a>
               <a href="#" class="card">
                 <h3 class="restaurants-item__heading">To Be</h3>
@@ -155,7 +173,8 @@
           <!--card-------------->
           <article class="restaurants-item">
               <a href="#" class="card">
-                <img class="restaurants-item__image" src="./images/catalog9.png" alt="grilled-beef">
+                <img class="restaurants-item__image"
+                  src="./images/catalog9.png" alt="grilled-beef">
               </a>
               <a href="#" class="card">
                 <h3 class="restaurants-item__heading">Druzi Cafe (вул. Прорізна)</h3>
@@ -178,9 +197,12 @@
         <div class="column-1">
           <form class="footer__nav-lang">
             <select class="footer__nav-lang-input">
-              <option class="footer__nav-lang-input" value="РУССКИй">РУССКИЙ</option>
-              <option class="footer__nav-lang-input" selected value="ENGLISH">ENGLISH</option>
-              <option class="footer__nav-lang-input" value="УКРАЇНСЬКА">УКРАЇНСЬКА</option>
+              <option class="footer__nav-lang-input"
+                value="РУССКИй">РУССКИЙ</option>
+              <option class="footer__nav-lang-input"
+                selected value="ENGLISH">ENGLISH</option>
+              <option class="footer__nav-lang-input"
+                value="УКРАЇНСЬКА">УКРАЇНСЬКА</option>
             </select>
           </form>
 
@@ -202,18 +224,18 @@
           </div>
         </div>
 
-        <div class="column-2">
-          <a class="link" href="#">About UberEats</a>
-          <a class="link" href="#">Become a Delivery Partner</a>
-          <a class="link" href="#">Become a Restaurant Partner</a>
-        </div>
+        <ul class="column-2">
+          <li class="list"><a class="link" href="#">About UberEats</a></li>
+          <li class="list"><a class="link" href="#">Become a Delivery Partner</a></li>
+          <li class="list"><a class="link" href="#">Become a Restaurant Partner</a></li>
+        </ul>
 
-        <div class="column-3">
-          <a class="link" href="#">See all cities</a>
-          <a class="link" href="#">Pricing</a>
-          <a class="link" href="#">Help</a>
-          <a class="link" href="#">FAQs</a>
-        </div>
+        <ul class="column-3">
+          <li class="list"><a class="link" href="#">See all cities</a></li>
+          <li class="list"><a class="link" href="#">Pricing</a></li>
+          <li class="list"><a class="link" href="#">Help</a></li>
+          <li class="list"><a class="link" href="#">FAQs</a></li>
+        </ul>
       </div>
       <hr class="hr">
 
