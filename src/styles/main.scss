@@ -43,6 +43,10 @@ body {
     text-align: center;
   }
 
+  &__address-time:focus {
+    color: #49a144;
+  }
+
   &__left-side .text {
     font-size: 16px;
     font-weight: 300;
@@ -96,6 +100,13 @@ body {
     text-align: center;
   }
 
+  &__right-side-sign-in:hover {
+    border: 1px solid #1d1d1d;
+    background-color: #1d1d1d;
+    color: #fff;
+    border-radius: 2px;
+  }
+
   &__right-side-register {
     width: 80px;
     height: 40px;
@@ -109,11 +120,16 @@ body {
     text-align: center;
   }
 
+  &__right-side-register:hover {
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: #1d1d1d;
+    border-radius: 2px;
+  }
+
   &__right-side-cart {
     margin: auto 0;
     display: block;
-    width: 35px;
-    height: 40px;
   }
 }
 
@@ -141,7 +157,8 @@ body {
     border: 0;
     border-bottom: 1px solid #757575;
     opacity: 0.6;
-    outline: none;
+    font-size: 18px;
+    color: black;
   }
 
   &__search-form::placeholder {
@@ -179,6 +196,23 @@ body {
   &__left-side {
     display: none;
   }
+}
+
+.btn {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 14px;
+  width: 20px;
+  border: none;
+  color: #49a144;
+  font-weight: 700;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: #757575;
 }
 
 .restaurants-item {
@@ -225,18 +259,11 @@ body {
   text-decoration: none;
   margin: auto 0;
   display: block;
-  transition: all 500ms ease 0s;
-}
-
-.link:hover {
-  background: #262626;
-  color: white;
-  cursor: pointer;
-  transition: all 500ms ease 0s;
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .footer {
@@ -371,29 +398,6 @@ a {
   font-weight: normal;
   line-height: 13px;
   color: #626262;
-}
-
-button[type="reset"] {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 14px;
-  width: 20px;
-  border: 1px solid white;
-  color: #49a144;
-  font-weight: 700;
-  background-color: white;
-}
-
-button[type="reset"]:hover {
-  background-color: white;
-  color: white;
-  border: 1px solid #49a144;
-}
-
-input[class="main-content__search-form"] {
-  font-size: 18px;
-  color: #1d1d1d;
 }
 
 .hr {
@@ -538,11 +542,12 @@ select {
     &__restaurants {
       grid-template-columns: 1fr;
     }
-    button[type="reset"] {
-      top: 12px;
-      right: 5px;
-    }
   }
+
+  // .btn {
+  //   top: 14px;
+  //   right: 5px;
+  // }
 
   .footer {
     &__nav {
