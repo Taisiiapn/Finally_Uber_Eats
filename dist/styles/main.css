@@ -188,7 +188,7 @@ body {
 .btn {
   display: block;
   position: absolute;
-  right: 0;
+  right: 1px;
   top: 14px;
   width: 20px;
   border: none;
@@ -236,7 +236,8 @@ body {
 .link {
   text-decoration: none;
   margin: auto 0;
-  display: block; }
+  display: block;
+  cursor: pointer; }
 
 a {
   text-decoration: none;
